@@ -112,4 +112,18 @@ Ada 2 tools utama yang harus dipersiapkan untuk membuat HTML
     - Chrome (Paling direkomendasikan), OperaGX, dan Firefox.
 - Code Editor
     - VSCode (Paling direkomendasikan), dan SublimeText.
+    
+HTML Structure
 
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Writing and Presentation Test</title>
+    </head>
+    <body>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum impedit totam quis necessitatibus, suscipit molestiae ipsam amet doloremque eius nobis?</p>
+    </body>
+    </html>
