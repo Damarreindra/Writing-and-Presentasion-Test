@@ -103,6 +103,7 @@ Vendor Git yaitu Github, Gitlab, Bitbucket Github merupakan vendor git yang pali
 - HTML adalah singkatan dari Hypertext Markup Language.
 - HTML digunakan untuk menampilkan konten pada browser. 
 - HTML bukanlah sebuah bahasa pemrograman, artinya HTML tidak bisa dinamis mengolah data.
+- HTML bisa dijalankan dengan melakukan klik kanan dan pilih default browser atau menggunakan live server extension.
 
 ### Tools Pendukung HTML 
 
@@ -113,7 +114,7 @@ Ada 2 tools utama yang harus dipersiapkan untuk membuat HTML
 - Code Editor
     - VSCode (Paling direkomendasikan), dan SublimeText.
     
-HTML Structure
+### HTML Structure
 
     <!DOCTYPE html>
     <html lang="en">
@@ -127,3 +128,69 @@ HTML Structure
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum impedit totam quis necessitatibus, suscipit molestiae ipsam amet doloremque eius nobis?</p>
     </body>
     </html>
+
+### Jenis Tag
+
+- Single Tag
+
+      - <br/>
+      - <hr/>
+      - <img>
+      
+- Paired Tag
+
+      - <h1></h1>
+      - <p>
+      - <head>
+ 
+### Anatomy Tag
+ 
+     <p> : Opening Tag
+      Lorem bla bla : Content
+     </p> : Closing Tag
+
+### Semantic HTML
+
+Dibandingkan menggunakan tag div dengan class header lebih baik kita menggunakan tag header yang sudah semantic, hal ini juga berlaku seperti footer, section, aside.
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Writing and Presentation Test</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="">Blog gg manja</a>
+            </nav>
+        </header>
+
+        <article>
+            <p>Lorem ipsum dolor sit amet cecessitatibus, suscipit molestiae ipsam amet doloremque eius nobis?  </p>
+        </article>
+
+        <footer>
+            Made by Damar with love
+        </footer>
+    </body>
+    </html>
+
+### Contoh Membuat Tag Popular
+     <table border="1">
+            <thead>
+                <tr>
+                    <td>Nama</td>
+                    <td>Umur</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Damar</td>
+                    <td>20</td>
+                </tr>
+            </tbody>
+        </table>
+    
