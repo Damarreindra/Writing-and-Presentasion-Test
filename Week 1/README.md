@@ -288,5 +288,51 @@ Sangat disarankan untuk memberikan pengukuran dari media sebesar 100%, agar medi
       }
     }
 
+## Module 5 : Algoritma 
+
+### Pendahuluan Algoritma dan Data Struktur
+
+- Algoritma adalah deskripsi berupa step-step yang dibutuhkan untuk menyelesaikan suatu masalah.
+- Struktur data adalah cara penyimpanan , pengorganisasian , dan pengaturan data di dalam media penyimpanan komputer sehingga data tersebut dapat digunakan secara efisien.
+- Dengan struktur data yang baik, maka konsep algoritma yang digunakan pun akan baik. Begitu juga dengan sebaliknya, jika struktur data tidak baik, maka konsep algoritma pada proses pemrograman pun juga tidak akan baik. Dengan memahami algoritma, suatu program akan mudah dilakukan.
+
+### Kualitas wajib dari Algoritma
+
+- Input dan output harus didefinisikan terlebih dahulu dengan tepat
+- Setiap step harus benar-benar clear dan tidak ambigu
+- Algoritma seharusnya tidak mengandung suatu code pada bahasa pemograman tertentu. Algoritma harus dibuat agar dapat digunakan dalam bahasa pemograman apapun.
+
+### Contoh Algoritma
+
+- Step 1 : Start
+- Step 2 : Declare Variabe a,b, and sum.
+- Step 3 : Read Variable a and b.
+- Step 4 : add a and b values to sum to assign a+b
+- Step 5 : display sum
+- Step 6 : Stop
+
+### Pseudocode
+
+Pseudocode adalah menuliskan algoritma dengan umumnya bahasa inggris sebelum kita implementasikan ke bahasa pemograman tertentu.
+
+### Contoh Pseudocode
+
+    STORE "Num1" from input form
+    STORE "Num2" from input form
+    STORE "Sum" without value
+    
+    CALCULATE "Num1" + "Num2" and SET value to "Sum"
+    DISPLAY "Sum"
+    
+ ### Contoh Penerapan Dengan Javascript
+ 
+    var a,b,num1,num2,sum;
+    a= prompt("Input first Number");
+    b= prompt("Input second Number");
+    num1 = parseFloat(a);
+    num2 = parseFloat(b);
+    sum = num1+num2;
+
+    alert(sum);
 
 
