@@ -335,4 +335,93 @@ Pseudocode adalah menuliskan algoritma dengan umumnya bahasa inggris sebelum kit
 
     alert(sum);
 
+## Module 6 : Javascript 
+
+### Pendahuluan Javascript
+
+Javascript adalah bahasa pemograman yang sangat powerful yang digunakan untuk logic pada sebuah website
+
+Javascript juga dapat membuat website menjadi interaktif dan dinamis
+
+### Cara Menjalankan Javascript 
+
+Javascript bisa dijalankan melalui browser, umumnya browser Chrome dan Mozilla yang sudah support untuk semua fitur Javascript.
+
+Dengan dipanggil melalui tag script HTML atau inline script.
+
+### Tipe Data 
+
+- number : 
+
+Tipe data number adalah tipe data yang mengandung semua angka termasuk angka desimal.
+Contoh:
+2, 4, 1200, 23.42
+
+- string :
+
+Tipe data string adalah grup karakter yang ada pada keyboard laptop/PC kita yaitu letters (huruf), number (angka), spaces (spasi), symbol, dan lainnya.
+Harus diawali dan diakhiri dengan single quotes ‘ … ‘ ataupun double quotes “ … “.
+
+
+- boolean :
+
+Tipe data boolean adalah tipe data yang hanya mempunyai 2 buah nilai.
+2 buah nilai tersebut adalah TRUE (benar) or FALSE (salah).
+Analoginya adalah seperti tombol/button ON/OFF dan juga seperti sebuah jawaban antara YES/NO.
+
+- null : 
+
+Tipe data null adalah tipe data yang diartikan bahwa sebuah variable/data tidak memiliki nilai.
+Null berbeda dengan string kosong. String kosong masih memiliki tipe data string.
+
+- undefined
+
+Tipe data undefined adalah tipe data yang merepresentasikan varibel/data yang tidak memiliki nilai.
+Undefined berbeda dengan null.
+
+- object
+
+Tipe data object adalah koleksi data yang saling berhubungan (related). Tipe data pbject dapat menyimpan data dengan tipe data apapun (number, string, boolean, dan lainnya).
+Tipe data object mempunyai key dan value.
+
+### Operator
+
+- Assignment Operator (=) : Assignment operator digunakan untuk menyimpan sebuah nilai pada variabel.
+- Mathematical Assignment Operator
+
+![image](https://user-images.githubusercontent.com/80618060/192676387-fffa7f89-3dbd-4865-ae47-9e10bf36bb45.png)
+
+- Increment dan Decrement
+Gunakan increment atau decrement untuk menambah atau mengurangi sebesar 1 nilai.
+
+![image](https://user-images.githubusercontent.com/80618060/192676438-acb06998-61bd-48f5-8d95-3c39746516d5.png)
+
+- Arithmetic Operator
+
+Arithmetic operator adalah operator yang melibatkan operasi matematika.
+
+    - Tambah (+)
+    - Kuramg (-)
+    - Perkalian (*)
+    - Pembagian (/)
+    - Modulus (%)
+
+- Comparison Operator
+
+    - Lebih kecil dari : <
+    - Lebih besar dari: >
+    - Lebih kecil atau sama dengan: <=
+    - Lebih besar atau sama dengan: >=
+    - Sama dengan: ===
+    - Tidak sama dengan: !==
+
+- Logical Operator
+
+    - AND operator : &&
+    - OR operator: ||
+    - NOT operator: !
+
+
+
+
 
