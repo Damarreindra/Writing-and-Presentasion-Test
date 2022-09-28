@@ -422,6 +422,30 @@ Arithmetic operator adalah operator yang melibatkan operasi matematika.
     - NOT operator: !
 
 
+### Apa itu Looping 
 
+Looping adalah statement yang mengulang sebuah instruksi hingga kondisi terpenuhi atau jika kondisi stop/berhenti tercapai.
+
+### Jenis Looping 
+
+- FOR LOOP
+
+FOR LOOP merupakan instruksi pengulangan yang dapat kita berikan pada program yang kita kembangkan.
+Gunakan FOR LOOP jika kita tahu seberapa banyak nilai pasti untuk pengulangannya
+
+![image](https://user-images.githubusercontent.com/80618060/192689944-a2b5a068-0aa2-4828-b99a-2cc27d89001f.png)
+
+- WHILE LOOP
+
+WHILE LOOP akan menjalankan instruksi pengulangan kondisi bernilai TRUE.
+Gunakan WHILE LOOP jika kita tidak mengetahui jumlah pasti pengulangan.
+
+![image](https://user-images.githubusercontent.com/80618060/192690055-176a8aff-c297-48f2-a5c9-721f493f7978.png)
+
+- DO WHILE 
+
+Terkadang kita ingin setidaknya menjalankan pengulangan 1 kali sebelum dilakukan pengecekan kondisi
+
+![image](https://user-images.githubusercontent.com/80618060/192690135-e8997d25-30de-4dcc-82f5-a16da2ef1a1b.png)
 
 
