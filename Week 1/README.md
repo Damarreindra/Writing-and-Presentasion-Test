@@ -193,4 +193,100 @@ Dibandingkan menggunakan tag div dengan class header lebih baik kita menggunakan
                 </tr>
             </tbody>
         </table>
-    
+ 
+### Deploy Web Dengan Netlify
+
+- Login dengan akun Git Provider
+
+![image](https://user-images.githubusercontent.com/80618060/192659057-5c17a6c3-841d-4eaa-baa3-2900936677f7.png)
+
+- Pilih repo yang ingin dideploy
+
+![image](https://user-images.githubusercontent.com/80618060/192659602-a85ad58d-acf3-432d-a951-ea077802d22a.png)
+
+- Pilih Branch, lalu klik deploy
+
+![image](https://user-images.githubusercontent.com/80618060/192659683-58969efd-9594-4e51-a179-43f918e52f8b.png)
+
+- Tunggu proses dan selesai (Belum menggunakan custom domain)
+
+![image](https://user-images.githubusercontent.com/80618060/192659798-467a3ca2-c8c0-4441-b537-4509526dd070.png)
+
+- Link : https://singular-melba-77bed3.netlify.app
+
+![image](https://user-images.githubusercontent.com/80618060/192660195-231b0b2d-2892-4c1c-aebc-559eca34315e.png)
+
+## Module 4 : CSS
+
+### Pendahuluan CSS
+
+Apa itu CSS? CSS adalah bahasa yang digunakan untuk mendesain halaman website.
+
+Dengan CSS, kita bisa mengubah warna, menggunakan font custom, editing text format, mengatur tata letak, dan lainnya.
+
+### Struktur CSS
+
+    .elementHTML{  
+         property : value } 
+         
+### Comment CSS
+
+Digunakan untuk memberi keterangan terutama jika bekerja bersama tim, karena akan lebih memudahkan dalam proses developing
+
+### Selector CSS
+
+- Class Selector ( . ) untuk menyeleksi class yang ingin stylenya kita ubah
+- Id Selector ( # ) untuk menyeleksi id yang ingin stylenya kita ubah
+- Tag Selector ( head, body, h1) untuk menyeleksi tag element yang ingin stylenya kita ubah. tag element HTML maka akan bersifat global yg artinya akan mengubah seluruh html
+
+### Memanggil CSS
+
+- Inline Tag : menggunakan css langsung di atribute element html
+- Internal Tag : menggunakan tag style di bagian head
+- External Tag : menggunakan file css terpisah dengan html
+
+### Flexbox 
+
+- Flexbox adalah suatu cara untuk mengatur layout atau tata letak
+- Flexbox terdiri 1 parent (container) dan bisa beberapa child
+- Flex direction digunakan untuk mengatur letak child
+- Flex wrap mengatur tata letak child pada 1 line
+- Flex flow yaitu digunakan sebagai shortcut untuk set up flex-direction dan flex-wrap secara bersamaan
+- Order digunakan untuk ordering item yang ingin diatur posisinya
+- Justify - content digunakan untuk mengatur tata letak antar item child secara horizontal
+- Align - content digunakan untuk mengatur tata letak antar item child secara vertikal atau cross axis
+- Flex-grow digunakan untuk mengatur size suatu item child pada flexbox
+- Flex-shrink digunakan untuk memperkecil size suatu item child secara relatif terhadap item child lainnya
+- flex-basis digunakan untuk mengatur width setiap item child
+
+### Responsive 
+
+Responsive digunakan supaya tampilan web terlihat baik pada semua ukuran device.
+
+- Fluid Grid
+Maksud dari fluid grid adalah sebuah grid atau garis-garis batas yang menentukan letak suatu komponen dalam desain, namun dapat berubah-ubah sesuai dengan ukuran tampilannya.
+
+Hal ini karena satuan yang digunakan adalah satuan yang relatif seperti persen, atau em (satuan dipakai dalam tipografi).
+
+- Media queries
+Adanya media query memungkinkan desainmu lebih sesuai dengan berbagai ukuran layar.
+
+Media query memungkinkan website untuk dapat mengambil data mengenai ukuran layar yang digunakan untuk menampilkan konten.
+
+- Responsive media
+Prinsip selanjutnya yang harus diperhatikan dalam membuat responsive web design adalah media yang responsif.
+
+Seperti pada poin pertama, yaitu kamu harus memastikan bahwa media seperti foto dan video dapat ditampilkan dengan baik di berbagai ukuran layar.
+
+Oleh karenanya, dibandingkan dengan menggunakan ukuran tampilan berupa pixel, maka pastikan ukuran dari media yang ditampilkan dalam bentuk persentase.
+
+Sangat disarankan untuk memberikan pengukuran dari media sebesar 100%, agar media yang ditampilkan dalam tampilan yang maksimal. 
+
+    @media screen and (min-width: 800px) {
+      .container {
+        margin: 1em 2em;
+      }
+    }
+
+
+
