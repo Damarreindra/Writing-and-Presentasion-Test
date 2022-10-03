@@ -120,4 +120,76 @@ Telah terjadi kesalahan tipe
 
 Terjadi kesalahan dalam encodeURI()
 
+## Module 3: DOM
+
+### Pendahuluan DOM
+
+Document Object Model (DOM) adalah antarmuka pemrograman aplikasi (API) untuk memanipulasi dokumen HTML.
+
+DOM mewakili dokumen HTML sebagai pohon simpul. DOM menyediakan fungsi yang memungkinkan Anda untuk menambah, menghapus, dan memodifikasi bagian dokumen secara efektif.
+
+Perhatikan bahwa DOM adalah cara lintas platform dan bahasa-independen untuk memanipulasi dokumen HTML dan XML.
+
+### Memanipulasi Element HTML
+
+- Mencari Element HTML : 
+
+![image](https://user-images.githubusercontent.com/80618060/193581386-a9478509-5844-479b-ae29-a1878b062c3c.png)
+
+- Mengubah Konten Element :
+
+    - Element.textContent : Element.textContent dapat kita gunakan untuk mengubah teks di dalam sebuah element
+
+![image](https://user-images.githubusercontent.com/80618060/193582120-1690a585-8701-4f4b-940b-75ec28365143.png)
+
+   - Element.innerHTML : Element.innerHTML dapat kita gunakan untuk mengubah konten HTML di dalam sebuah element.
+  
+getElementsByClassName itu bakal ngereturn bentuk array. walaupun cuma ada 1 element dengan class itu
+
+Kalau bisa diulangin lagi penggunaan id dan class (id cuma boleh 1 element per page, class bisa beberapa sekaligus dan per element bisa beberapa class)
+
+- Membuat Element HTML :
+
+![image](https://user-images.githubusercontent.com/80618060/193582968-a3bfe660-37df-4e0c-b82f-3c660b7580d8.png)
+
+### Event
+
+- Menangkap Interaksi User
+
+    - Element.addEventListener(“event”) : 
+        - Bisa dihilangkan
+        - Bisa ada beberapa event listener yang sama untuk 1 element
+        - Memiliki argument tambahan { options }
+
+    - Element.onevent
+
+- Macam-macam Event Listener :
+
+    - EventListener - Click :
+
+    ![image](https://user-images.githubusercontent.com/80618060/193584454-76b14bbf-7be4-4408-a186-223814bb8030.png)
+
+    - EventListener - Blur :
+    
+    “Blur”, lawan dari “focus”, adalah event di mana sebuah element kehilangan fokus dari user 
+    
+    (misal user klk mouse di luar element tersebut atau user klik tab untuk berpindah element)
+    
+    ![image](https://user-images.githubusercontent.com/80618060/193584760-c63169a7-51d2-4039-9ce1-1921a228c305.png)
+
+     - EventListener - Form Submission :
+
+    Misalkan kita mempunyai element beberapa input dalam sebuah form <input name=”email /> dan <input type=”password” name=”password” />. 
+    
+    Bagaimana caranya  kita mendapatkan isi dari kedua input tersebut saat submit form?
+    
+    Ada 2 cara:
+    
+    - Pasang event listener di kedua input dan tombol submit, lalu saat tombol diklik, baca value dari kedua input tersebut.
+       
+    - Pasang event listener di form, lalu gunakan FormData untuk mengambil data dari masing-masing input
+
+
+
+
 
