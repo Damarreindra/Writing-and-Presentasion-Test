@@ -100,7 +100,59 @@ Misal disini saya hanya akan mengambil properti nama maka saya menjalankan conso
 
 ![image](https://user-images.githubusercontent.com/80618060/194898702-edf8bd2e-86b3-4529-8ff7-3452f4cca9ae.png)
 
-## Module 4 : Web Storage 
+## Module 4 : Asynchronous 
+
+### Pendahuluan
+- Asynchronous sebuah teknik yang menyelesaikan fungsi secara paralel
+- Penggunaan asynchronous dapat dilakukan jika kita ingin mengambil data dari database
+- Mengapa perlu menggunakan asynchronous? Asynchronous dibutuhkan ketika ada proses yangg membutuhkan waktu lama. Jadi kita bisa mengerjakan proses yg lain secara paralel.
+- Callbacks adalah suatu function namun cara pengeksekusiannya yang berbeda yaitu hanya mengeksekusi pada point tertentu.
+- Salah satu function yang digunakan untuk mengatur penjadwalan asynchronous adalah setTimeout function
+
+### Contoh 
+
+        function p1() {
+          console.log('p1 done')
+        }
+          function p2() {
+          setTimeout(
+            function() {
+              console.log('p2 done')
+            },2000
+          )
+        }
+        function p3() {
+        console.log('p3 done')
+        }
+        p1()
+        p2()
+        p3()
+        
+### Asynchronous - Promise 
+
+- merupakan suatu object dan digunakan hanya untuk satu event dengan menyimpan hasil dari sebuah operasi asynchronous baik itu hasil yang diinginkan (resolved value) atau alasan kenapa operasi itu gagal (failure reason)
+
+### Contoh Promise 
+
+        function GetUser(id) {
+        return new Promise((resolve, reject) => {
+        if (id !== "" && id !== undefined) {
+          reesolve (id);
+        } else {
+          reject ("ID Harus di Isi");
+            }
+        });
+        }
+
+        GetUser( ) 
+        .then((response) => {
+        console.log(response);
+         })
+         .catch((error) => {
+        console.log(error);
+        });
+
+## Module 5 : Web Storage 
 
 ### Pendahuluan Web Storage
 
