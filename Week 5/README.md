@@ -68,4 +68,12 @@ Ada 2 cara membuat component pada react JS, yaitu dengan :
 
 ![image](https://user-images.githubusercontent.com/80618060/198893655-4573b2ad-cff7-4dec-8920-a9228be5f325.png)
 
+### State and Props
+
+- State, sebuah object untuk menyimpan data pada React dan akan di render atau muat ulang ketika data mengalami perubahan
+- Props, Props adalah suatu cara untuk mengirim dan mengakses data dari komponent lain secara langsung.
+
+Contoh : 
+
+![image](https://user-images.githubusercontent.com/80618060/198895534-e2edf99a-c3a6-4e50-9f57-58c9325aae58.png)
 
