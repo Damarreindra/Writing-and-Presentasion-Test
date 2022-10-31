@@ -166,3 +166,23 @@ Contoh code menggunakan useEffect :
       )
     }
     export default Example
+
+### PropTypes
+
+Apa itu PropTypes?
+
+PropTypes merupakan library untuk menvalidasi props. Ini sangat membantu dalam meminimalkan bugs saat mengembangkan App besar. Jika props tidak benar type nya maka akan muncul warning.
+
+Cara Penggunaan : 
+
+- Install Proptypes 
+  
+    npm install prop-types
+    
+- Import kedalam file component : 
+
+    import PropTypes from "prop-types"
+
+- Panggil proptype seperti gambar yang ada dibawah 
+
+![image](https://user-images.githubusercontent.com/80618060/198964326-800eb2fb-8f7f-448b-a88c-bdf396214d6a.png)
