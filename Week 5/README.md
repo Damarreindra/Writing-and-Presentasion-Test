@@ -77,3 +77,30 @@ Contoh :
 
 ![image](https://user-images.githubusercontent.com/80618060/198895534-e2edf99a-c3a6-4e50-9f57-58c9325aae58.png)
 
+### React Lifecycle
+
+Component — component di react js akan melewati tiga fase hidup, yaitu :
+
+- Mounting
+- Updating
+- Unmounting
+
+![image](https://user-images.githubusercontent.com/80618060/198962277-6e7313db-2479-4fb6-9e47-32f9a342c4b8.png)
+
+Fase Mounting 
+
+adalah fase ketika components di buat atau pertama kali di render ke DOM Coba perhatikan pada fase Mounting di atas ! Pada fase ini ada tiga methods yang akan di eksekusi yaitu componentWillMount, render, dan componentDidMount. Urutannya eksekusi setiap methodsnya di mulai dari atas ke bawah seperti pada gambar di atas.
+
+Dalam hal ini componentWillMount adalah method yang akan di eksekusi pertama kali, kemudian akan mengeksekusi method render. Di dalam method render inilah kita menyimpan file jsx yang nantinya akan di render ke DOM.
+
+Fase updating 
+
+adalah fase ketika sebuah component akan di render ulang, biasanya ini terjadi ketika ada perubahan pada state atau props yang mengakibatkan perubahan DOM.
+
+Di fase ini adalah 5 methods yang akan di eksekusi :
+
+  - componentWillReceiveProps : fungsi ini akan di eksekusi bila state yang ada di component akan di update atau di ubah dengan nilai props yang baru.
+  - shouldComponentUpdate : tugasnya adalah untuk menentukan apakah sebuah component akan di render ulang atau tidak.Method ini akan mengembalikan nilai boolean true & false, jika true maka component akan di render ulang atau sebaliknya.
+  - componentWillUpdate : fungsi ini akan di eksekusi jika fungsi shouldComponentUpdate mengembalikan nilai true.
+  Kemudian kembali method render akan di jalankan
+  - componentDidUpdate : fungsinya sama dengan componentDidMount yaitu untuk manipulasi DOM dan request data.
