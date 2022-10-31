@@ -87,13 +87,13 @@ Component — component di react js akan melewati tiga fase hidup, yaitu :
 
 ![image](https://user-images.githubusercontent.com/80618060/198962277-6e7313db-2479-4fb6-9e47-32f9a342c4b8.png)
 
-Fase Mounting 
+- Fase Mounting 
 
 adalah fase ketika components di buat atau pertama kali di render ke DOM Coba perhatikan pada fase Mounting di atas ! Pada fase ini ada tiga methods yang akan di eksekusi yaitu componentWillMount, render, dan componentDidMount. Urutannya eksekusi setiap methodsnya di mulai dari atas ke bawah seperti pada gambar di atas.
 
 Dalam hal ini componentWillMount adalah method yang akan di eksekusi pertama kali, kemudian akan mengeksekusi method render. Di dalam method render inilah kita menyimpan file jsx yang nantinya akan di render ke DOM.
 
-Fase updating 
+- Fase updating 
 
 adalah fase ketika sebuah component akan di render ulang, biasanya ini terjadi ketika ada perubahan pada state atau props yang mengakibatkan perubahan DOM.
 
@@ -104,3 +104,65 @@ Di fase ini adalah 5 methods yang akan di eksekusi :
   - componentWillUpdate : fungsi ini akan di eksekusi jika fungsi shouldComponentUpdate mengembalikan nilai true.
   Kemudian kembali method render akan di jalankan
   - componentDidUpdate : fungsinya sama dengan componentDidMount yaitu untuk manipulasi DOM dan request data.
+
+- Fase unmounting 
+
+adalah fase ketika component di hapus dari DOM.Pada fase ini hanya ada satu method yang akan di eksekusi yaitu componentWillUnmount, yang di jalankan sebelum sebuah component di hapus dari DOM
+
+## React JS Lanjutan
+
+### React Hooks
+
+Apa itu itu react hooks ?
+
+Sebenarnya react hooks hanya kumpulan fungsi — fungsi khusus. Dengan fungsi — fungsi ini, memungkinkan kita menggunakan fitur — fitur react tampah harus menggunakan class komponen.
+
+- useState 
+
+Fungsi useState akan mereturn pasangan nilai dari state dan fungsi untuk mengubah state tersebut dalam bentuk sebuah array.
+
+    import React, {useState} from "react"
+
+    const Example = () => {
+      const [name, setName] = useState("")
+      const changeName = e => setName(e.target.value)
+      return(
+        <input
+          type="text"
+          value={name}
+          onChange={changeName}
+        />
+      )
+    }    
+    
+- Item pertama adalah statenya
+- Item keduanya adalah fungsi untuk mengubah state tersebut
+
+- useEffect
+- 
+React hooks useEffect digunakan untuk menambahkan side effect ke function komponen.
+
+Penggunaan useEffect mirip dengan lifecycle method seperti componentDidMount, componentDidUpdate, dan componentWillMount di class component.
+
+useEffect hooks akan menerima dua parameter, yaitu sebuah callback dan sebuah array.
+
+    useEffect(fn, [])
+    
+Contoh code menggunakan useEffect : 
+
+    import React from "react"
+    import axios from "axios"
+
+    const Example = () => {
+      const [lists, setLists] = useState([])
+      useEffect(() => {
+        axios.get(endPoint)
+          .then(res => setLists(res.data)
+      },[])
+      return(
+        <div>
+          <h1>my component</h1>
+        <div/>
+      )
+    }
+    export default Example
