@@ -209,9 +209,9 @@ Buat file store.js pada folder redux [/src/redux/store.js] dan tulis kode sepert
 
 Redux Memudahkan User dalam :
 
-    - menyimpan status aplikasi Anda.
-    - mengelola status aplikasi Anda.
-    - memberi tahu pihak yang berkepentingan ketika status aplikasi berubah.
+          - menyimpan status aplikasi Anda.
+          - mengelola status aplikasi Anda.
+          - memberi tahu pihak yang berkepentingan ketika status aplikasi berubah.
 
 - Redux memungkinkan untuk mengelola status aplikasi Anda di satu tempat dan membuat perubahan di aplikasi mudah untuk diprediksi dan dilacak
 
